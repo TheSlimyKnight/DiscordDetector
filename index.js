@@ -1,5 +1,5 @@
-let detected;
-let previous;
+let detected = false;
+let previous = false;
 
 async function updateDetection() {
     xhttp = new XMLHttpRequest();
