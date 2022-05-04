@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono");
+
+body {
+    margin:  0;
+    border:  0;
+    padding: 0;
+    overflow: hidden;
+
+    background-color: #5662F6;
+}
+
+#menubar {
+    cursor: default;
+}
+
+#container {
+    position: absolute;
+    height: 300px;
+    background-color: #494c52;
+
+    border-radius: 16px;
+
+    top: calc(50vh - 150px);
+    left: calc(50vw - 200px);
+
+    box-shadow: 0 0 10px -3px black;
+}
+
+#draggable {
+    width: 400px;
+    height: 12px;
+    background-color: #2f3136;
+
+    border-radius: 14px 14px 0 0;
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+#content {
+    position: absolute;
+    margin-top: 0px;
+}
+
+#info {
+    width: 18px;
+    height: 18px;
+    background-color: #494c52;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    margin-right: 0;
+    margin-left: auto;
+    font-family: "Jetbrains Mono", monospace;
+    color: whitesmoke;
+    font-size: 13px;
+
+    cursor: default;
+}
+
+#icon {
+    position: relative;
+    top: 20px;
+    left: 135px;
+
+    transition: all 0.5s;
+}
+
+#info_dropdown {
+
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 12px;
+    color: whitesmoke;
+
+    width: 0px;
+    height: 245px;
+    background-color: #3C3F44;
+    border-radius: 14px;
+
+    position: relative;
+    top: -158px;
+    left: 408px;
+
+    transition: all 0.5s;
+}
+
+#info_dropdown.shown {
+    top: -108px;
+    width: 267px;
+    left: 141px;
+}
+
+#icon.shown {
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+#explanation.shown {
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+#explanation {
+    text-align: left;
+    margin: 15px;
+    font-size: 0;
+    color: #3C3F44;
+
+    padding-top: 12px;
+
+    transition: all 0.5s;
+}
+
+#status {
+    position: relative;
+    left: 160px;
+    top: 190px;
+    background-color: #3a3c41;
+    width: 100px;
+    height: 30px;
+    border-radius: 100px;
+
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 12px;
+    color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s;
+}
+
+#status.shown {
+    left: 29px;
+    top: 130px;
+    width: calc(100px * 0.8);
+    height: calc(30px * 0.8);
+    font-size: calc(12px * 0.8);
+}
+
+#status.changing {
+    color: #3a3c41;
+}
