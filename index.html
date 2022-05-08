@@ -7,17 +7,15 @@
     <title>Discord Detector</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
-
     <div id="container">
 
         <div id="draggable">
             <p id="title">Discord Detector</p>
             <div id="info">?</div>
         </div>
-
         <div id="content">
             <img id="icon" src="resources/discord.svg" height="150px" width="150px">
             <div id="info_dropdown">
@@ -31,12 +29,9 @@
                 </p>
             </div>
         </div>
-
-        <div id="status">
+        <div id="status" data-status="false">
             Not Detected
         </div>
-
     </div>
-
 </body>
 </html>
